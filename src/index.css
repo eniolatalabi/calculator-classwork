@@ -1,0 +1,136 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background-color: #99c188;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.every {
+  height: 32rem;
+  max-width: 25rem;
+  background-color: #575757;
+  display: flex;
+  border-radius: 1.5rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+}
+
+.screen {
+  padding-right: 10px;
+  background-color: #bcd2bf;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  width: 23rem;
+  height: 4rem;
+  text-align: right;
+  font-size: 2.5rem;
+  font-family: 'Cursed Timer ULiL', sans-serif;
+  font-weight: 400;
+  color: black;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.9);
+  
+}
+
+.screen::placeholder {
+  font-size: 2.5rem;
+  font-family: 'Cursed Timer ULiL', sans-serif;                                           
+  font-weight: 400;
+}
+
+.buttons {
+  margin-top: 2rem;
+  width: inherit;
+  height: 22rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.section1, .section2, .section3, .section4{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+  
+}
+
+.section5{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  
+}
+
+input {
+  border-radius: none;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+#hovero:hover, #equals:hover {
+  background-color: black;
+  color: #f9fefb;
+}
+
+#equals {
+  background-color: #f5a34d;
+  color: #f9fefb;
+}
+
+.red {
+  background-color: #cb516c;
+  color: #f9fefb;;
+}
+
+.bold {
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+
+ 
+
+@media only screen and (max-width : 600px) {
+  
+  .every {
+    width: 20rem;
+  }
+  
+  .screen {
+    width: 18rem;
+  }
+}
+  @media only screen and (max-width : 370px) {
+  
+    .every {
+      width: 15rem;
+      height: 25rem;
+    }
+  
+    .screen {
+      width: 13rem;
+      height: 3rem;
+    }
+
+    .buttons {
+      height: 18rem;
+      margin-top: 1rem;
+    }
+  
+} 

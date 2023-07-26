@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+    <div class="every">
+                <form action="">
+                <input disabled type="text" class="screen" name="display" placeholder="0">
+            <div class="buttons">
+                <div class="section1">
+                    <input type="button" id="hovero" value="7" onclick="display.value += '7'">
+                    <input type="button" id="hovero" value="8" onclick="display.value += '8'">
+                    <input type="button" id="hovero" value="9" onclick="display.value += '9'">
+                    <input type="button" id="hovero" class="bold" value="/" onclick="display.value += '/'">
+                </div>
+                <div class="section2">
+                    <input type="button" id="hovero" value="4" onclick="display.value += '4'">
+                    <input type="button" id="hovero" value="5" onclick="display.value += '5'">
+                    <input type="button" id="hovero" value="6" onclick="display.value += '6'">
+                    <input type="button" id="hovero" class="bold" value="*" onclick="display.value += '*'">
+                </div>
+                <div class="section3">
+                    <input type="button" id="hovero" value="1" onclick="display.value += '1'">
+                    <input type="button" id="hovero" value="2" onclick="display.value += '2'">
+                    <input type="button" id="hovero" value="3" onclick="display.value += '3'">
+                    <input type="button" id="hovero" class="bold" value="-" onclick="display.value += '-'">
+                </div>
+                <div class="section4">
+                    <input type="button" id="hovero" value="0" onclick="display.value += '0'">
+                    <input type="button" id="hovero" class="bold" value="." onclick="display.value += '.'">
+                    <input type="button" id="hovero" class="bold" value="+" onclick="display.value += '+'">
+                    <input type="button" class="bold" id="equals" value="=" onclick="display.value  = eval(display.value)">
+                </div>
+                <div class="section5">
+                    <input type="button" id="hovero" class="red" value="AC" onclick="display.value = ''">
+                    <input type="button" id="hovero" class="red" value="DEL" onclick="display.value=display.value.toString().slice(0, -1)">
+                </div>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>
+              
+</body>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
